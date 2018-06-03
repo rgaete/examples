@@ -1,12 +1,10 @@
 package com.rgfp.scrumdeveloper.complexity;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
 public class ComplexityApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ComplexityApplication.class, args);
+        Resolver resolver = new Resolver();
+        System.out.println(resolver.funciona(true,true,true,true,false));
 	}
 }
+
