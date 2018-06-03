@@ -1,0 +1,5 @@
+rootProject.name = 'scrumdeveloper-examples'
+
+include 'unitTest'
+include 'complexity'
+include 'refactoring'
