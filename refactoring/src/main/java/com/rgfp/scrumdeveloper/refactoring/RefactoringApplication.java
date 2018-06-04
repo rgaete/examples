@@ -1,8 +1,8 @@
 package com.rgfp.scrumdeveloper.refactoring;
 
-import com.rgfp.scrumdeveloper.messageHandling.MessageHandlingV1;
-import com.rgfp.scrumdeveloper.messageHandling.MessageHandlingV2;
-import com.rgfp.scrumdeveloper.messageHandling.MessageHandlingV3;
+import com.rgfp.scrumdeveloper.messageHandling.v1.MessageHandlingV1;
+import com.rgfp.scrumdeveloper.messageHandling.v2.MessageHandlingV2;
+import com.rgfp.scrumdeveloper.messageHandling.v3.MessageHandlingV3;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,6 +1,6 @@
-package com.rgfp.scrumdeveloper.messageHandling;
+package com.rgfp.scrumdeveloper.messageHandling.v2;
 
-public class EmailPopService {
+public class EmailServiceV2 {
 
     // incomplete, implemented just for the refactoring exercises
 

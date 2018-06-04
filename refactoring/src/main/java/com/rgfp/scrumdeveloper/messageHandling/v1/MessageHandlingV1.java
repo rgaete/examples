@@ -1,9 +1,9 @@
-package com.rgfp.scrumdeveloper.messageHandling;
+package com.rgfp.scrumdeveloper.messageHandling.v1;
 
 public class MessageHandlingV1 {
 
-    private Inventory inventory = new Inventory();
-    private EmailPopService emailPopService = new EmailPopService();
+    private InventoryV1 inventory = new InventoryV1();
+    private EmailServiceV1 emailService = new EmailServiceV1();
 
     public void printStatus() {
         if (this.inventory.itemsLeft() > 0) {
@@ -16,9 +16,9 @@ public class MessageHandlingV1 {
 
     public void sendEmailWithStatus() {
         if (this.inventory.itemsLeft() > 0) {
-            emailPopService.send("We have " + this.inventory.itemsLeft() + " items.");
+            emailService.send("We have " + this.inventory.itemsLeft() + " items.");
         } else {
-            emailPopService.send("We have no more items.");
+            emailService.send("We have no more items.");
         }
     }
 
