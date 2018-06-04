@@ -3,7 +3,7 @@ package com.rgfp.scrumdeveloper.messageHandling;
 public class MessageHandlingV2 {
 
     private Inventory inventory = new Inventory();
-    private EmailService emailService;
+    private EmailPopService emailPopService;
 
     public void printStatus() {
         int itemsLeft = this.inventory.itemsLeft();
@@ -26,7 +26,7 @@ public class MessageHandlingV2 {
         } else {
             message = "We have no more items.";
         }
-        emailService.send(message);
+        emailPopService.send(message);
     }
 
 }

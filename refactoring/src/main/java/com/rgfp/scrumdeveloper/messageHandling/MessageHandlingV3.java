@@ -3,7 +3,7 @@ package com.rgfp.scrumdeveloper.messageHandling;
 public class MessageHandlingV3 {
 
     private Inventory inventory = new Inventory();
-    private EmailService emailService;
+    private EmailPopService emailPopService;
 
     public void printStatus() {
         System.out.println(buildMessage());
@@ -11,7 +11,7 @@ public class MessageHandlingV3 {
     }
 
     public void sendEmailWithStatus() {
-        emailService.send(buildMessage());
+        emailPopService.send(buildMessage());
     }
 
     private String buildMessage() {
