@@ -3,7 +3,7 @@ package com.rgfp.scrumdeveloper.messageHandling.v2;
 public class MessageHandlingV2 {
 
     private InventoryV2 inventory = new InventoryV2();
-    private EmailServiceV2 emailService = new EmailServiceV2();
+    private EmailPopServiceV2 emailService = new EmailPopServiceV2();
 
     public void printStatus() {
         int itemsLeft = this.inventory.itemsLeft();

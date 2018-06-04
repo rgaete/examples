@@ -16,6 +16,8 @@ public class RefactoringApplication {
         MessageHandlingV2 messageHandlingV2 = new MessageHandlingV2();
         MessageHandlingV3 messageHandlingV3 = new MessageHandlingV3();
 
+        System.out.println("Printing ");
+
         System.out.print("V1 message: ");
         messageHandlingV1.printStatus();
 
@@ -24,5 +26,17 @@ public class RefactoringApplication {
 
         System.out.print("V3 message: ");
         messageHandlingV3.printStatus();
+
+
+        System.out.println("Sending email ");
+
+        System.out.print("V1 message: ");
+        messageHandlingV1.sendEmailWithStatus();
+
+        System.out.print("V2 message: ");
+        messageHandlingV2.sendEmailWithStatus();
+
+        System.out.print("V3 message: ");
+        messageHandlingV3.sendEmailWithStatus();
 	}
 }
