@@ -19,6 +19,11 @@ group = 'com.rgfp.scrumdeveloper'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
+bootJar {
+	baseName = 'gs-consuming-rest'
+	version =  '0.1.0'
+}
+
 repositories {
 	mavenCentral()
 }
@@ -26,5 +31,7 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
+    compile("org.springframework:spring-web")
+    compile("com.fasterxml.jackson.core:jackson-databind")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
