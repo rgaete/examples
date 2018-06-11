@@ -14,6 +14,10 @@ public class Quote {
         }
     }
 
+    public String getText() {
+        return text;
+    }
+
     public Quote(QuoteClient quoteClient) {
         this.quoteClient = quoteClient;
     }
@@ -29,7 +33,7 @@ public class Quote {
     public int howManyTimesTheWord(String wordToLook) {
         int times = 0;
         int index = 0;
-        while (this.text.substring(index).indexOf(wordToLook) != -1) {
+        while (this.text.toLowerCase().substring(index).indexOf(wordToLook) != -1) {
             times ++;
             index = Integer.min(this.text.length(), index + this.text.substring(index).indexOf(wordToLook) + wordToLook.length());
         }
