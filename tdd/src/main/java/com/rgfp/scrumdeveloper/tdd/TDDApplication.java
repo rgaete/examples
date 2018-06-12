@@ -8,8 +8,5 @@ public class TDDApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TDDApplication.class, args);
-
-		StringCalculator.add("");
-
 	}
 }
