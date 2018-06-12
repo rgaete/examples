@@ -1,4 +1,4 @@
-package com.rgfp.scrumdeveloper.doubleObJect;
+package com.rgfp.scrumdeveloper.doubleObject;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
