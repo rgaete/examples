@@ -11,7 +11,6 @@ public class DoubleObject {
 		SpringApplication.run(DoubleObject.class, args);
 
 		Quote quote = new Quote();
-		quote.fetchNewQuote();
 
         System.out.println("Original quote: " + quote.getText());
         System.out.println("Quote length: " + quote.getLength());

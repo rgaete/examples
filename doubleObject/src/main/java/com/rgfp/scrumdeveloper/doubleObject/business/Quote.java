@@ -8,22 +8,19 @@ public class Quote {
     private QuoteClient quoteClient;
 
     public Quote() {
-        this.text = "";
         if (this.quoteClient == null) {
             this.quoteClient = new QuoteClient();
         }
-    }
-
-    public String getText() {
-        return text;
+        this.fetchNewQuote();
     }
 
     public Quote(QuoteClient quoteClient) {
         this.quoteClient = quoteClient;
+        this.fetchNewQuote();
     }
 
-    public void fetchNewQuote() {
-        this.text = quoteClient.getQuote();
+    public String getText() {
+        return text;
     }
 
     public int getLength() {
@@ -33,7 +30,7 @@ public class Quote {
     public int howManyTimesTheWord(String wordToLook) {
         int times = 0;
         int index = 0;
-        while (this.text.toLowerCase().substring(index).indexOf(wordToLook) != -1) {
+        while (this.text.toLowerCase().substring(index).indexOf(wordToLook.toLowerCase()) != -1) {
             times ++;
             index = Integer.min(this.text.length(), index + this.text.substring(index).indexOf(wordToLook) + wordToLook.length());
         }
@@ -48,4 +45,9 @@ public class Quote {
         }
         return reversePhrase.trim();
     }
+
+    private void fetchNewQuote() {
+        this.text = quoteClient.getQuote();
+    }
+
 }
