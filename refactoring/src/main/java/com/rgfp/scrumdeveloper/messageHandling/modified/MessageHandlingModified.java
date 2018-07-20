@@ -5,12 +5,12 @@ public class MessageHandlingModified {
     private InventoryModified inventory = new InventoryModified();
     private EmailPopServiceModified emailPopService = new EmailPopServiceModified();
 
-    public void printStatus() {
-        System.out.println(buildMessage());
+    public String printStatus() {
+        return buildMessage();
     }
 
-    public void sendEmailWithStatus() {
-        emailPopService.send(buildMessage());
+    public String sendEmailWithStatus() {
+        return emailPopService.send(buildMessage());
     }
 
     private String buildMessage() {
