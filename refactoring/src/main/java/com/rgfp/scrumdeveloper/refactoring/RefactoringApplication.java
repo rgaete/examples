@@ -16,19 +16,19 @@ public class RefactoringApplication {
 
         System.out.println("Printing ");
 
-        System.out.print("V1 message: ");
+        System.out.print("Initial version message: ");
         messageHandlingInitial.printStatus();
 
-        System.out.print("V4 message: ");
+        System.out.print("Modified version message: ");
         messageHandlingModified.printStatus();
 
 
         System.out.println("Sending email ");
 
-        System.out.print("V1 message: ");
+        System.out.print("Initial version message: ");
         messageHandlingInitial.sendEmailWithStatus();
 
-        System.out.print("V4 message: ");
+        System.out.print("Final version message: ");
         messageHandlingModified.sendEmailWithStatus();
 	}
 }
