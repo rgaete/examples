@@ -1,8 +1,14 @@
 package com.rgfp.scrumdeveloper.messageHandling.modified;
 
+import com.rgfp.scrumdeveloper.common.Inventory;
+
 public class MessageHandlingModified {
 
-    private InventoryModified inventory = new InventoryModified();
+    public MessageHandlingModified(Inventory inventory) {
+        this.inventory = inventory;
+    }
+
+    private Inventory inventory;
     private EmailPopServiceModified emailPopService = new EmailPopServiceModified();
 
     public String printStatus() {
@@ -14,7 +20,7 @@ public class MessageHandlingModified {
     }
 
     private String buildMessage() {
-        int itemsLeft = this.inventory.itemsLeft(false);
+        int itemsLeft = this.inventory.itemsLeft();
         String message;
         if (itemsLeft > 0) {
             message = "We have " + itemsLeft + " items.";

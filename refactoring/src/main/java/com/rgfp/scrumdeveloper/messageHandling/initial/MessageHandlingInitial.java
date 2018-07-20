@@ -1,8 +1,14 @@
 package com.rgfp.scrumdeveloper.messageHandling.initial;
 
+import com.rgfp.scrumdeveloper.common.Inventory;
+
 public class MessageHandlingInitial {
 
-    private InventoryInitial inventory = new InventoryInitial();
+    public MessageHandlingInitial(Inventory inventory) {
+        this.inventory = inventory;
+    }
+
+    private Inventory inventory;
     private EmailPopServiceInitial emailService = new EmailPopServiceInitial();
 
     public String printStatus() {

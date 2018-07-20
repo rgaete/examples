@@ -1,5 +1,6 @@
 package com.rgfp.scrumdeveloper.refactoring;
 
+import com.rgfp.scrumdeveloper.common.Inventory;
 import com.rgfp.scrumdeveloper.messageHandling.initial.MessageHandlingInitial;
 import com.rgfp.scrumdeveloper.messageHandling.modified.MessageHandlingModified;
 import org.springframework.boot.SpringApplication;
@@ -11,8 +12,9 @@ public class RefactoringApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RefactoringApplication.class, args);
 
-        MessageHandlingInitial messageHandlingInitial = new MessageHandlingInitial();
-        MessageHandlingModified messageHandlingModified = new MessageHandlingModified();
+        Inventory inventory = new Inventory(5);
+        MessageHandlingInitial messageHandlingInitial = new MessageHandlingInitial(inventory);
+        MessageHandlingModified messageHandlingModified = new MessageHandlingModified(inventory);
 
         System.out.println("Printing ");
 
