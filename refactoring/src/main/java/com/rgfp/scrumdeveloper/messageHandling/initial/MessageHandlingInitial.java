@@ -13,9 +13,9 @@ public class MessageHandlingInitial {
 
     public String printStatus() {
         if (this.inventory.itemsLeft() > 0) {
-            return "We have " + this.inventory.itemsLeft() + " items.";
+            return "Status: We have " + this.inventory.itemsLeft() + " items.";
         } else {
-            return "We have no more items.";
+            return "Status: We have no more items.";
         }
     }
 

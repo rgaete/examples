@@ -10,15 +10,15 @@ public class MessageHandlingInitialTest {
     private MessageHandlingInitial messageHandling;
     private Inventory inventoryWithItems = new Inventory(5);
     private Inventory inventoryWithoutItems = new Inventory(0);
+    private static final String NO_MORE_ITEMS = "We have no more items.";
+    private static final String WE_HAVE_5_ITEMS = "We have 5 items.";
 
     @Test
     public void shouldPrintWeHaveNoMoreItemsWhenItemsLeftIsZero() {
 
         messageHandling = new MessageHandlingInitial(inventoryWithoutItems);
 
-        String expectedMessage = "We have no more items.";
-
-        assertEquals(expectedMessage, messageHandling.printStatus());
+        assertEquals("Status: " + NO_MORE_ITEMS, messageHandling.printStatus());
 
     }
 
@@ -27,9 +27,7 @@ public class MessageHandlingInitialTest {
 
         messageHandling = new MessageHandlingInitial(inventoryWithItems);
 
-        String expectedMessage = "We have 5 items.";
-
-        assertEquals(expectedMessage, messageHandling.printStatus());
+        assertEquals("Status: " + WE_HAVE_5_ITEMS, messageHandling.printStatus());
 
     }
 
@@ -38,9 +36,7 @@ public class MessageHandlingInitialTest {
 
         messageHandling = new MessageHandlingInitial(inventoryWithItems);
 
-        String expectedMessage = "We have 5 items.";
-
-        assertEquals(expectedMessage, messageHandling.sendEmailWithStatus());
+        assertEquals("[POP]Email sent with message " + WE_HAVE_5_ITEMS, messageHandling.sendEmailWithStatus());
 
     }
 
@@ -49,9 +45,7 @@ public class MessageHandlingInitialTest {
 
         messageHandling = new MessageHandlingInitial(inventoryWithoutItems);
 
-        String expectedMessage = "We have no more items.";
-
-        assertEquals(expectedMessage, messageHandling.sendEmailWithStatus());
+        assertEquals("[POP]Email sent with message " + NO_MORE_ITEMS, messageHandling.sendEmailWithStatus());
 
     }
 

@@ -7,7 +7,7 @@ public class EmailPopServiceInitial extends EmailServiceInitial {
     private static String protocol = "POP";
 
     public String send(String message) {
-        return message;
+        return "[" + protocol + "]Email sent with message " + message;
     }
 
 }

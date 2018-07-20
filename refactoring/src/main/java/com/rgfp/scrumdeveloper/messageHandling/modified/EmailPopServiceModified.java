@@ -4,6 +4,8 @@ public class EmailPopServiceModified extends EmailServiceModified {
 
     // incomplete, implemented just for the refactoring exercises
 
-    private static String protocol = "POP";
 
+    public EmailPopServiceModified() {
+        protocol = "POP";
+    }
 }

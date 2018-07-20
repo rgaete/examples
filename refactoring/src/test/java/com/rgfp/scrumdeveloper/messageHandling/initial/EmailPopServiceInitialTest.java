@@ -7,13 +7,14 @@ import static org.junit.Assert.assertEquals;
 public class EmailPopServiceInitialTest {
 
     @Test
-    public void sendShouldReturnTheValuePassed() {
+    public void sendShouldReturnTheProtocolAndValuePassed() {
 
         EmailPopServiceInitial popService = new EmailPopServiceInitial();
 
         String testingMessage = "testing message";
-        assertEquals(testingMessage, popService.send(testingMessage));
+        assertEquals("[POP]Email sent with message " + testingMessage, popService.send(testingMessage));
 
     }
+
 
 }

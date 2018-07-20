@@ -7,12 +7,12 @@ import static org.junit.Assert.assertEquals;
 public class EmailImapServiceInitialTest {
 
     @Test
-    public void sendShouldReturnTheValuePassed() {
+    public void sendShouldReturnTheProtocolAndValuePassed() {
 
         EmailImapServiceInitial imapService = new EmailImapServiceInitial();
 
         String testingMessage = "testing message";
-        assertEquals(testingMessage, imapService.send(testingMessage));
+        assertEquals("[IMAP]Email sent with message " + testingMessage, imapService.send(testingMessage));
 
     }
 

@@ -40,7 +40,7 @@ public class MessageHandlingModifiedTest {
 
         String expectedMessage = "We have 5 items.";
 
-        assertEquals(expectedMessage, messageHandling.sendEmailWithStatus());
+        assertEquals("[POP]Email sent with message " + expectedMessage, messageHandling.sendEmailWithStatus());
 
     }
 
@@ -51,7 +51,7 @@ public class MessageHandlingModifiedTest {
 
         String expectedMessage = "We have no more items.";
 
-        assertEquals(expectedMessage, messageHandling.sendEmailWithStatus());
+        assertEquals("[POP]Email sent with message " + expectedMessage, messageHandling.sendEmailWithStatus());
 
     }
 
