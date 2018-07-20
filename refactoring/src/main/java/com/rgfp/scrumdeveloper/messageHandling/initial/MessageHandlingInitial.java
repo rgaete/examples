@@ -1,9 +1,9 @@
-package com.rgfp.scrumdeveloper.messageHandling.v1;
+package com.rgfp.scrumdeveloper.messageHandling.initial;
 
-public class MessageHandlingV1 {
+public class MessageHandlingInitial {
 
-    private InventoryV1 inventory = new InventoryV1();
-    private EmailPopServiceV1 emailService = new EmailPopServiceV1();
+    private InventoryInitial inventory = new InventoryInitial();
+    private EmailPopServiceInitial emailService = new EmailPopServiceInitial();
 
     public void printStatus() {
         if (this.inventory.itemsLeft() > 0) {

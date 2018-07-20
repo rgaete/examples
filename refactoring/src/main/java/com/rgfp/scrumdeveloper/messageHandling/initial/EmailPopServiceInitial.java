@@ -1,6 +1,6 @@
-package com.rgfp.scrumdeveloper.messageHandling.v1;
+package com.rgfp.scrumdeveloper.messageHandling.initial;
 
-public class EmailPopServiceV1 extends EmailServiceV1 {
+public class EmailPopServiceInitial extends EmailServiceInitial {
 
     // incomplete, implemented just for the refactoring exercises
 

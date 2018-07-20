@@ -1,9 +1,9 @@
-package com.rgfp.scrumdeveloper.messageHandling.v4;
+package com.rgfp.scrumdeveloper.messageHandling.modified;
 
-public class MessageHandlingV4 {
+public class MessageHandlingModified {
 
-    private InventoryV4 inventory = new InventoryV4();
-    private EmailPopServiceV4 emailPopService = new EmailPopServiceV4();
+    private InventoryModified inventory = new InventoryModified();
+    private EmailPopServiceModified emailPopService = new EmailPopServiceModified();
 
     public void printStatus() {
         System.out.println(buildMessage());

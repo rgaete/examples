@@ -1,6 +1,6 @@
-package com.rgfp.scrumdeveloper.messageHandling.v2;
+package com.rgfp.scrumdeveloper.messageHandling.initial;
 
-public class InventoryV2 {
+public class InventoryInitial {
 
     // incomplete, implemented just for the refactoring exercises
 
