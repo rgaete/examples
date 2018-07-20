@@ -6,8 +6,8 @@ public class EmailImapServiceInitial extends EmailServiceInitial {
 
     private static String protocol = "IMAP";
 
-    public void send(String message) {
-        System.out.println(message);
+    public String send(String message) {
+        return message;
     }
 
 }
