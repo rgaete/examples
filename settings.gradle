@@ -1,4 +1,4 @@
-rootProject.name = 'scrumdeveloper-examples'
+rootProject.name = 'intro-agile'
 
 include 'unitTest'
 include 'complexity'
