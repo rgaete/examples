@@ -1,4 +1,4 @@
-package com.rgfp.scrumdeveloper.doubleObject.service.domain;
+package com.rgfp.scrumdeveloper.testDoubles.service.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,6 +1,6 @@
-package com.rgfp.scrumdeveloper.doubleObject.business;
+package com.rgfp.scrumdeveloper.testDoubles.business;
 
-import com.rgfp.scrumdeveloper.doubleObject.service.QuoteClient;
+import com.rgfp.scrumdeveloper.testDoubles.service.QuoteClient;
 
 public class Quote {
 

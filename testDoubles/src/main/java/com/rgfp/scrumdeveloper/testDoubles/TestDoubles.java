@@ -1,14 +1,14 @@
-package com.rgfp.scrumdeveloper.doubleObject;
+package com.rgfp.scrumdeveloper.testDoubles;
 
-import com.rgfp.scrumdeveloper.doubleObject.business.Quote;
+import com.rgfp.scrumdeveloper.testDoubles.business.Quote;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DoubleObject {
+public class TestDoubles {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DoubleObject.class, args);
+		SpringApplication.run(TestDoubles.class, args);
 
 		Quote quote = new Quote();
 

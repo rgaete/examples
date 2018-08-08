@@ -1,4 +1,4 @@
-package com.rgfp.scrumdeveloper.doubleObject;
+package com.rgfp.scrumdeveloper.testDoubles;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DoubleObjectApplicationTests {
+public class TestDoublesApplicationTests {
 
 	@Test
 	public void contextLoads() {

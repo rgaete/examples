@@ -1,4 +1,4 @@
-package com.rgfp.scrumdeveloper.doubleObject.business;
+package com.rgfp.scrumdeveloper.testDoubles.business;
 
 import org.junit.Test;
 

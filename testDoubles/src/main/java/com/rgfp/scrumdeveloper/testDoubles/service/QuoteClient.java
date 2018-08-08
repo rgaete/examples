@@ -1,6 +1,6 @@
-package com.rgfp.scrumdeveloper.doubleObject.service;
+package com.rgfp.scrumdeveloper.testDoubles.service;
 
-import com.rgfp.scrumdeveloper.doubleObject.service.domain.QuoteMapper;
+import com.rgfp.scrumdeveloper.testDoubles.service.domain.QuoteMapper;
 import org.springframework.web.client.RestTemplate;
 
 public class QuoteClient {
