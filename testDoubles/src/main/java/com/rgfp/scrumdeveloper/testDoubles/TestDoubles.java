@@ -12,10 +12,12 @@ public class TestDoubles {
 
 		Quote quote = new Quote();
 
+        System.out.println("---------------------------------------");
         System.out.println("Original quote: " + quote.getText());
         System.out.println("Quote length: " + quote.getLength());
         System.out.println("Saying spring " + quote.howManyTimesTheWord("spring"));
         System.out.println("Reverse frase: " + quote.reverse());
+        System.out.println("---------------------------------------");
 
     }
 
