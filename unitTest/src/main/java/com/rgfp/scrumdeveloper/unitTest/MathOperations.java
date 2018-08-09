@@ -46,4 +46,20 @@ public class MathOperations {
         return numbers.length;
     }
 
+    public static Integer square(Integer number) {
+
+        return number * number;
+
+    }
+
+    public static Integer factorial(Integer number) {
+        if (number < 0) {
+            throw new ArithmeticException("number must be > 0");
+        } else if (number <= 1) {
+            return number;
+        } else {
+            return number * factorial(number - 1);
+        }
+    }
+
 }
